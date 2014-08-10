@@ -2,13 +2,14 @@
 Theme Name: Basic theme
 Author: Gennaro Catapano
 Author URI: www.gennarocatapano.it
-Version: 0.1
+Version: 0.1.1
 */
 
 body {
 	font-family: Arial, sans-serif;
 	font-size: 14px;
 	color: #333;
+	background-color: #E6E6E6;
 }
 
 a:link,
@@ -38,16 +39,35 @@ div.container {
 
 article.post {
 	border-bottom: 2px dotted #bbbbbb;
+	color: yellow;
 }
 
 article.post:last-of-type {
 	border-bottom: none;
 }
 
+article.post:first-of-type {
+	margin-top: 15px;
+	border-top: 2px solid #999; 
+}
+
 /* Header */
 
 .site-header {
-	border-bottom: 2px solid #999;
+	/*border-bottom: 2px solid #999;*/
+	border: 10px double #FCFCF8;
+	text-align: center;
+	background-color: #006ec3;
+	color: #FCFCF8;
+	margin-top: 15px;
+	
+}
+
+#blogTitle {
+	color: #FCFCF8;
+	font-family: Georgia, serif;
+	font-size: 125%;
+	letter-spacing: 10px;
 }
 
 /* Footer */

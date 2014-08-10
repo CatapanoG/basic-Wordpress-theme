@@ -13,21 +13,18 @@
 
 		<div class="container">
 
+			<!-- navigation menu -->
+			<nav class="site-nav">
+				<?php 
+					$args = array("theme_location" => "primary");
+					wp_nav_menu($args); 
+				?>
+			</nav>
+
 			<!-- site header -->
 			<div class="site-header">
-
-				<!-- navigation menu -->
-				<nav class="site-nav">
-					<?php 
-					
-						$args = array("theme_location" => "primary");
-						wp_nav_menu($args); 
-
-					?>
-				</nav>
-
 				<h1>
-					<a href=" <?php echo home_url(); ?> ">
+					<a href=" <?php echo home_url(); ?> " id="blogTitle">
 						<?php bloginfo("name"); ?>
 					</a>
 				</h1>
